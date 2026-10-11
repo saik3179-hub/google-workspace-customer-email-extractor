@@ -1,0 +1,19 @@
+
+flowchart TD
+    A["Google Workspace Domain"] --> B["Administrator Configuration"]
+    B --> C["Google Cloud Project"]
+    C --> D["Service Account and Domain-Wide Delegation"]
+    D --> E["Authorized Organizational Mailboxes"]
+    E --> F["Gmail API Access"]
+    F --> G["Retrieve Inbox, Sent and CC Information"]
+    G --> H["Extract and Validate Email Addresses"]
+    H --> I["Filter Internal and System Addresses"]
+    I --> J["Remove Duplicate Addresses"]
+    J --> K["Central Google Sheet"]
+
+    subgraph Personal_Demo["Separate Personal Demo"]
+        L["One Authorized Gmail Account"] --> M["Google Apps Script / GmailApp"]
+        M --> N["Extract, Filter and Deduplicate"]
+        N --> O["Personal Google Sheet"]
+        P["Time-Driven Trigger"] --> M
+    end
