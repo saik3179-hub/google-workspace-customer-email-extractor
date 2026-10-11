@@ -10,13 +10,6 @@ The personal demonstration version uses `GmailApp` and a time-driven Apps Script
 
 The original organizational implementation used a different architecture to access authorized company mailboxes through Gmail API, service-account authentication, and domain-wide delegation.
 
-
-## Documentation
-
-- [System Architecture](docs/Architecture.md)
-- [Extraction Workflow](docs/Workflow.md)
-- [Security and Privacy](docs/Security.md)
-
 ## Business Problem
 
 Customer email addresses can be distributed across numerous email conversations. Manually collecting and consolidating these addresses is repetitive and can result in duplicate or invalid records.
